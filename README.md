@@ -1,7 +1,11 @@
 Ghostcar
 ========
 
-Ghostcar is you a year ago, checking into the present day. It's like Twitshift for Foursquare.
+Ghostcar is you a year ago, checking into the present day. It's like ~~Twitshift for Foursquare~~ real-time Timehop.  Thanks to @infovore for building it.  Below are my instructions for setting it up, since the documentation was quite sparse.
+
+[Original blog post](http://infovore.org/archives/2012/07/30/ghostcar/)
+
+
 
 # Set up
 ## Ruby on Rails
@@ -26,3 +30,8 @@ Ghostcar is you a year ago, checking into the present day. It's like Twitshift f
   * Download / welcome page url
   * Redirect URI(s)
 3. Keep the app in DEV mode
+
+
+## Running the app
+1. start your rails server on the terminal. Just run rails server.  Google any error messages, and follwo the instructions until it works.
+2. visit 0.0.0.0:3000 and the app should come up.  The homepage has all the instructions you need to follow.
