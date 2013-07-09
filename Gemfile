@@ -10,6 +10,7 @@ gem 'quimby'
 gem 'addressable'
 gem 'rest-client'
 gem 'kaminari'
+gem 'whenever', :require => false #added by PJ
 
 group :assets do
   gem 'therubyracer'
