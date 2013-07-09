@@ -13,15 +13,6 @@ Ghostcar is you a year ago, checking into the present day. It's like ~~Twitshift
 2. update all ruby dependencies
 3. make sure the mysql.sock points to MAMP.  See [this article](http://fischerlaender.de/apple-mac/mac-os-x-trouble-with-mamp-mysql)
 
-## Ghostcar app
-1. set up MYSQL db named ghostcar_development on MAMP
-2. create user and assign permissions
-3. update the config.yml 
-  * use the new  Username and password
-  * add host: localhost
-  * add: socket: [MAMP socket location] 
-4. update the foursquare_creds.rb file to use your Foursquare app's API key and secret
-
 
 
 ## Create Foursquare App
@@ -31,7 +22,20 @@ Ghostcar is you a year ago, checking into the present day. It's like ~~Twitshift
   * Redirect URI(s)
 3. Keep the app in DEV mode
 
-
-## Running the app
+## Configure Ghostcar app
+1. set up MYSQL db named ghostcar_development on MAMP
+2. create user and assign permissions
+3. update the `config.yml` 
+  * use the new  Username and password
+  * add `host: localhost`
+  * add: `socket: [MAMP socket location] `
+4. update the foursquare_creds.rb file to use your Foursquare app's API key and secret
 1. start your rails server on the terminal. Just run rails server.  Google any error messages, and follwo the instructions until it works.
 2. visit 0.0.0.0:3000 and the app should come up.  The homepage has all the instructions you need to follow.
+
+
+
+## Running the app
+The website that connects your 4SQ accounts and stores the checkins is not what does the actual checking in.  For that to work, set up a cron job to automatically run the checkin procedure.
+1. open terminal
+2. run 
