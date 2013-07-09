@@ -4,6 +4,7 @@ gem 'rake', '0.9.2.2'
 gem 'rails', '3.2.3'
 
 gem 'mysql2'
+gem 'sqlite3', '1.3.5' #added by PJ
 gem 'haml'
 gem 'quimby'
 gem 'addressable'

@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20120418142351) do
     t.string   "venue_id"
     t.string   "timezone"
     t.string   "venue_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
     t.boolean  "reposted",                :default => false
   end
 
@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20120418142351) do
     t.string   "lastname"
     t.string   "picture_url"
     t.string   "foursquare_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
     t.string   "secondary_access_token"
     t.string   "secondary_foursquare_id"
   end
